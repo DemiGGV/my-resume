@@ -1,0 +1,252 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #E5E5E5;    
+}
+
+/* Main frame styles */
+.main_frame {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin: 40px auto;
+    /* justify-content: center; */
+    background: #ffffff;
+    box-shadow: 16px 16px 20px #0000001e;
+}
+
+/* Information box styles */
+.bio_box {
+    width: 650px;
+    padding: 100px 90px;
+
+}
+
+/* intro box styles */
+.intro_box {
+    width: 400px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.intro_proff_box {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.intro_name_box {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+.intro_paragraph_class {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    margin-bottom: 40px;
+}
+
+/* projects box styles */
+.project_box{
+    width: 485px;
+}
+.projects_header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.projects_ol {
+    padding-left: 17px;
+    margin-bottom: 50px;
+}
+.projects_ol_button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+.projects_ol_ref {
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 400;
+    color: #595959;
+}
+.projects_list_points {
+    font-weight: 400;
+    color: #595959;
+}
+.projects_sq_bracket {
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+}
+.projects_text {
+    font-weight: 400;
+    color: #595959;
+}
+
+/* work box styles */
+.work_box {
+    width: 525px;
+}
+.work_main_header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+.work_header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+.work_header_color {
+    color: #FB6D3A;
+    margin: 0 0 10px 0;
+}
+.work_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin: 0 0 10px 0;
+}
+.work_text_column {
+    color: #000000;
+}
+.work_list_box {
+    padding-left: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+.work_list_text {
+    font-weight: 400;
+    color: #595959;
+}
+
+/* education box styles */
+.edu_box {
+    width: 330px;
+}
+.edu_main_header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin: 40px 0 10px 0;
+}
+.edu_header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FB6D3A;
+    margin: 0 0 10px 0;
+}
+.edu_profffesion {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+.edu_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin: 0 0 20px 0;
+}
+.edu_text_column {
+    color: #000000;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Sidebar styles */
+.aside_box {
+    width: 370px;
+    padding: 40px 0;
+    background: #1E2939;
+}
+
+.sidebar_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+/* sidebar all boxes stiles */
+.contacts_box,
+.TS_box {
+    margin: 50px 0 0 40px;
+}
+
+/* sidebar soft skills box styles*/
+.SS_box {
+    margin: 45px 0 0 40px;
+}
+
+/* sidebar contacts styles */
+.tel_button,
+.mail_button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.tel_ref,
+.mail_ref {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8e949c;
+}
+
+/* sidebar list styles */
+.TS_list,
+.SS_list {
+    padding: 0 0 0 17px;
+}
+.TS_list_button,
+.SS_list_button {
+    color: #FB6D3A;
+}
+.TS_list_p,
+.SS_list_p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
