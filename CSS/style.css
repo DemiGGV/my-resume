@@ -84,6 +84,9 @@ body {
     font-weight: 400;
     color: #595959;
 }
+.projects_ol_ref:hover{
+    color: #ff0000;
+}
 .projects_list_points {
     font-weight: 400;
     color: #595959;
