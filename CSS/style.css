@@ -59,7 +59,7 @@ body {
 .project_box{
     width: 485px;
 }
-.projects_header {
+.projecTechSkills_header {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -67,36 +67,36 @@ body {
     color: #000000;
     margin-bottom: 10px;
 }
-.projects_ol {
+.projecTechSkills_ol {
     padding-left: 17px;
     margin-bottom: 50px;
 }
-.projects_ol_button {
+.projecTechSkills_ol_button {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     color: #000000;
 }
-.projects_ol_ref {
+.projecTechSkills_ol_ref {
     margin-left: 10px;
     font-style: normal;
     font-weight: 400;
     color: #595959;
 }
-.projects_ol_ref:hover{
+.projecTechSkills_ol_ref:hover{
     color: #ff0000;
 }
-.projects_list_points {
+.projecTechSkills_list_points {
     font-weight: 400;
     color: #595959;
 }
-.projects_sq_bracket {
+.projecTechSkills_sq_bracket {
     font-style: normal;
     font-weight: 700;
     color: #000000;
 }
-.projects_text {
+.projecTechSkills_text {
     font-weight: 400;
     color: #595959;
 }
@@ -197,7 +197,7 @@ body {
     background: #1E2939;
 }
 
-.sidebar_title {
+.sidebar__title {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -207,13 +207,13 @@ body {
 }
 
 /* sidebar all boxes stiles */
-.contacts_box,
-.TS_box {
+.sidebar__contacts_box,
+.TechSkills__box {
     margin: 50px 0 0 40px;
 }
 
 /* sidebar soft skills box styles*/
-.SS_box {
+.SoftSkills__box {
     margin: 45px 0 0 40px;
 }
 
@@ -237,16 +237,16 @@ body {
 }
 
 /* sidebar list styles */
-.TS_list,
-.SS_list {
+.TechSkills__list,
+.SoftSkills__list {
     padding: 0 0 0 17px;
 }
-.TS_list_button,
-.SS_list_button {
+.TechSkills__item,
+.SoftSkills__item {
     color: #FB6D3A;
 }
-.TS_list_p,
-.SS_list_p {
+.TechSkills__text,
+.SoftSkills__text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
