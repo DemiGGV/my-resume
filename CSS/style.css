@@ -23,7 +23,7 @@ body {
 
 /* intro box styles */
 .intro_box {
-    width: 400px;
+    width: 525px;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -54,12 +54,30 @@ body {
     color: #595959;
     margin-bottom: 40px;
 }
+.intro__header-lang{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 0;
+}
+.intro__list {
+    margin-top: 16px;
+}
+.intro__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
 
 /* projects box styles */
 .project_box{
     width: 485px;
 }
-.projecTechSkills_header {
+.projecTechSkills__header {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -67,38 +85,36 @@ body {
     color: #000000;
     margin-bottom: 10px;
 }
-.projecTechSkills_ol {
+.projecTechSkills__list {
     padding-left: 17px;
     margin-bottom: 50px;
 }
-.projecTechSkills_ol_button {
+.projecTechSkills__item {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
+    color: #595959;
 }
-.projecTechSkills_ol_ref {
+.projecTechSkills__refference {
     margin-left: 10px;
     font-style: normal;
     font-weight: 400;
-    color: #595959;
+    color: inherit;
 }
-.projecTechSkills_ol_ref:hover{
+.projecTechSkills__item:hover{
+    background-color: #59595920;
     color: #ff0000;
 }
-.projecTechSkills_list_points {
+.projecTechSkills__text {
     font-weight: 400;
-    color: #595959;
-}
-.projecTechSkills_sq_bracket {
-    font-style: normal;
-    font-weight: 700;
-    color: #000000;
-}
-.projecTechSkills_text {
-    font-weight: 400;
-    color: #595959;
+    text-align: end;
+    color: inherit;
 }
 
 /* work box styles */
@@ -235,7 +251,10 @@ body {
     line-height: 24px;
     color: #8e949c;
 }
-
+.tel_ref:hover,
+.mail_ref:hover {
+    color: #ff0000;
+}
 /* sidebar list styles */
 .TechSkills__list,
 .SoftSkills__list {
