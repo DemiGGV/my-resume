@@ -17,13 +17,12 @@ body {
 /* Information box styles */
 .bio_box {
     width: 650px;
-    padding: 100px 90px;
-
+    padding: 20px 90px 90px;
 }
 
 /* intro box styles */
 .intro_box {
-    width: 525px;
+    /* width: 525px; */
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -74,9 +73,9 @@ body {
 }
 
 /* projects box styles */
-.project_box{
+/* .project_box{
     width: 485px;
-}
+} */
 .projecTechSkills__header {
     font-style: normal;
     font-weight: 700;
@@ -86,7 +85,7 @@ body {
     margin-bottom: 10px;
 }
 .projecTechSkills__list {
-    padding-left: 17px;
+    padding-left: 0;
     margin-bottom: 50px;
 }
 .projecTechSkills__item {
@@ -94,13 +93,16 @@ body {
     justify-items: center;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5px;
+    padding: 5px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     color: #595959;
 }
+.projecTechSkills__item:nth-child(odd) {
+    background-color: #20202010;
+  }
 .projecTechSkills__refference {
     margin-left: 10px;
     font-style: normal;
@@ -108,7 +110,7 @@ body {
     color: inherit;
 }
 .projecTechSkills__item:hover{
-    background-color: #59595920;
+    background-color: #20202050;
     color: #ff0000;
 }
 .projecTechSkills__text {
@@ -119,7 +121,7 @@ body {
 
 /* work box styles */
 .work_box {
-    width: 525px;
+    /* width: 525px; */
 }
 .work_main_header {
     font-style: normal;
@@ -152,7 +154,7 @@ body {
 .work_text_column {
     color: #000000;
 }
-.work_list_box {
+.work_list_box, .work_list_box2 {
     padding-left: 15px;
     font-style: normal;
     font-weight: 700;
@@ -271,4 +273,31 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
+}
+
+@media print {
+    /* span, h1, h2, h3, h4, h5, h6, a, p {
+        color:black !important;
+        background-color: white !important;
+    } */
+    /* span, a, p {
+        font-size: 16px !important;
+    } */
+    /* .work_list_box{
+        display: none;
+    } */
+    /* .sidebar__image_box{
+        margin-left: 30px;
+    } */
+     body {
+        background-color: #fff;
+     }
+    .main_frame{
+        /* width: 100%; */
+        box-shadow: none;
+        margin: 0;
+    }
+    .aside_box {
+        background: #1E2939 !important;
+    }   
 }
