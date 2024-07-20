@@ -9,20 +9,17 @@ body {
     flex-direction: row-reverse;
     width: 1200px;
     margin: 40px auto;
-    /* justify-content: center; */
     background: #ffffff;
     box-shadow: 16px 16px 20px #0000001e;
 }
 
 /* Information box styles */
-.bio_box {
-    width: 650px;
+.box__bio {
     padding: 20px 90px 90px;
 }
 
 /* intro box styles */
-.intro_box {
-    /* width: 525px; */
+.intro__box {
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -30,7 +27,8 @@ body {
     color: #000000;
     margin-bottom: 20px;
 }
-.intro_proff_box {
+
+.intro__proffession {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -38,14 +36,16 @@ body {
     color: #000000;
     margin-bottom: 20px;
 }
-.intro_name_box {
+
+.intro__name {
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
     line-height: 55px;
     margin-bottom: 20px;
 }
-.intro_paragraph_class {
+
+.intro__text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -53,7 +53,8 @@ body {
     color: #595959;
     margin-bottom: 40px;
 }
-.intro__header-lang{
+
+.intro__title{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -73,10 +74,8 @@ body {
 }
 
 /* projects box styles */
-/* .project_box{
-    width: 485px;
-} */
-.projecTechSkills__header {
+
+.projects__header {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -84,11 +83,13 @@ body {
     color: #000000;
     margin-bottom: 10px;
 }
-.projecTechSkills__list {
+
+.projects__list {
     padding-left: 0;
     margin-bottom: 50px;
 }
-.projecTechSkills__item {
+
+.projects__item {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -100,38 +101,32 @@ body {
     line-height: 24px;
     color: #595959;
 }
-.projecTechSkills__item:nth-child(odd) {
+
+.projects__item:hover{
+    color: #ff0000;
+    background-color: #20202050;
+}
+
+.projects__item:nth-child(odd) {
     background-color: #20202010;
-  }
-.projecTechSkills__refference {
+}
+
+.projects__link {
     margin-left: 10px;
     font-style: normal;
     font-weight: 400;
     color: inherit;
 }
-.projecTechSkills__item:hover{
-    background-color: #20202050;
-    color: #ff0000;
-}
-.projecTechSkills__text {
+
+.projects__text {
     font-weight: 400;
     text-align: end;
     color: inherit;
 }
 
 /* work box styles */
-.work_box {
-    /* width: 525px; */
-}
-.work_main_header {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    color: #000000;
-    margin: 0 0 10px 0;
-}
-.work_header {
+
+.works__title, .work__title {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -139,22 +134,26 @@ body {
     color: #000000;
     margin: 0 0 10px 0;
 }
-.work_header_color {
+
+.work__title_color {
     color: #FB6D3A;
     margin: 0 0 10px 0;
 }
-.work_text {
+
+.work__text {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    color: #A8A8A8;
+    color: #595959;
     margin: 0 0 10px 0;
 }
-.work_text_column {
+
+.work__text_column {
     color: #000000;
 }
-.work_list_box, .work_list_box2 {
+
+.work__list, .work__list2 {
     padding-left: 15px;
     font-style: normal;
     font-weight: 700;
@@ -162,16 +161,15 @@ body {
     line-height: 24px;
     color: #595959;
 }
-.work_list_text {
+
+.work__list_text {
     font-weight: 400;
     color: #595959;
 }
 
 /* education box styles */
-.edu_box {
-    width: 330px;
-}
-.edu_main_header{
+
+.edu__main_title {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -179,7 +177,8 @@ body {
     color: #000000;
     margin: 40px 0 10px 0;
 }
-.edu_header {
+
+.edu__title {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -187,7 +186,8 @@ body {
     color: #FB6D3A;
     margin: 0 0 10px 0;
 }
-.edu_profffesion {
+
+.edu__profffesion {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -195,21 +195,24 @@ body {
     color: #000000;
     margin: 0 0 10px 0;
 }
-.edu_text {
+
+.edu__text {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    color: #A8A8A8;
+    color: #595959;
     margin: 0 0 20px 0;
 }
-.edu_text_column {
+
+.edu__text_column {
     color: #000000;
 }
 
 /* ---------------------------------------------------------------------------- */
 /* Sidebar styles */
-.aside_box {
+
+.sidebar__box {
     width: 370px;
     padding: 40px 0;
     background: #1E2939;
@@ -225,49 +228,57 @@ body {
 }
 
 /* sidebar all boxes stiles */
-.sidebar__contacts_box,
-.TechSkills__box {
+.sidebar__contacts,
+.TechSkills {
     margin: 50px 0 0 40px;
 }
 
 /* sidebar soft skills box styles*/
+
 .SoftSkills__box {
     margin: 45px 0 0 40px;
 }
 
 /* sidebar contacts styles */
-.tel_button,
-.mail_button {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #FFFFFF;
-    margin-right: 10px;
+
+.contacts__list{
+    padding: 0;
+    list-style-type: none;
 }
-.tel_ref,
-.mail_ref {
+
+.contacts__span {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #8e949c;
 }
-.tel_ref:hover,
-.mail_ref:hover {
+
+.contacts__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.contacts__link:hover {
     color: #ff0000;
 }
+
 /* sidebar list styles */
+
 .TechSkills__list,
 .SoftSkills__list {
     padding: 0 0 0 17px;
 }
-.TechSkills__item,
-.SoftSkills__item {
+
+.Skills__item {
     color: #FB6D3A;
 }
-.TechSkills__text,
-.SoftSkills__text {
+
+.Skills__text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -297,7 +308,7 @@ body {
         box-shadow: none;
         margin: 0;
     }
-    .aside_box {
+    .sidebar__box {
         background: #1E2939 !important;
     }   
 }
