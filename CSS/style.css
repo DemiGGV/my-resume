@@ -287,28 +287,24 @@ body {
 }
 
 @media print {
-    /* span, h1, h2, h3, h4, h5, h6, a, p {
+    span, h1, h2, h3, h4, h5, h6, a, p {
         color:black !important;
         background-color: white !important;
-    } */
-    /* span, a, p {
+    }
+    span, a, p {
         font-size: 16px !important;
-    } */
-    /* .work_list_box{
+    }
+    .work__list{
         display: none;
-    } */
-    /* .sidebar__image_box{
+    }
+    .sidebar__image_box{
         margin-left: 30px;
-    } */
+    }
      body {
         background-color: #fff;
      }
     .main_frame{
-        /* width: 100%; */
         box-shadow: none;
         margin: 0;
     }
-    .sidebar__box {
-        background: #1E2939 !important;
-    }   
 }
