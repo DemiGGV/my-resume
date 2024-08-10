@@ -1,3 +1,25 @@
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: #E5E5E5;    
@@ -18,6 +40,24 @@ body {
     padding: 20px 90px 90px;
 }
 
+.header__list{
+    display: flex;
+    justify-content: end;
+}
+
+.header__item{
+    font-style: italic;
+    padding: 4px 12px;
+    border-radius: 4px;
+    &:hover{
+        background-color:#E5E5E5;
+    }
+    &.active{
+        color:#ff0000;
+        background-color:#E5E5E5;
+    }
+}
+
 /* intro box styles */
 .intro__box {
     font-style: normal;
@@ -31,7 +71,7 @@ body {
 .intro__proffession {
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #000000;
     margin-bottom: 20px;
@@ -112,6 +152,9 @@ body {
 }
 
 .projects__link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-left: 10px;
     font-style: normal;
     font-weight: 400;
@@ -119,7 +162,7 @@ body {
 }
 
 .projects__text {
-    font-weight: 400;
+    font-weight: 700;
     text-align: end;
     color: inherit;
 }
@@ -140,10 +183,22 @@ body {
     margin: 0 0 10px 0;
 }
 
+
+.work__link {
+    text-decoration:underline;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 400;
+    color: inherit;
+    &:hover{
+        color:#ff0000;
+    }
+}
+
 .work__text {
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
     color: #595959;
     margin: 0 0 10px 0;
@@ -224,28 +279,30 @@ body {
     font-size: 22px;
     line-height: 27px;
     color: #FFFFFF;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 /* sidebar all boxes stiles */
 .sidebar__contacts,
-.TechSkills {
-    margin: 50px 0 0 40px;
-}
-
-/* sidebar soft skills box styles*/
-
+.TechSkills,
 .SoftSkills__box {
-    margin: 45px 0 0 40px;
+    margin: 50px 15px 0 40px;
 }
+
 
 /* sidebar contacts styles */
 
 .contacts__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     padding: 0;
     list-style-type: none;
 }
-
+.contacts__item {
+    display: flex;
+    justify-content:space-between;
+}
 .contacts__span {
     font-style: normal;
     font-weight: 400;
@@ -255,12 +312,17 @@ body {
 }
 
 .contacts__link {
+    display: block;
+    text-align: end;
+    gap: 5px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
-    margin-right: 10px;
+}
+.contacts__tel-link{
+    margin-left: 20px;
 }
 
 .contacts__link:hover {
